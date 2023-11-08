@@ -1,9 +1,45 @@
 body{
     display: grid;
     grid-template: 1fr 3fr / 1fr 3fr;
+    color: #000000;
+}
+
+.header-container{
+    display: grid;
+    grid-template: 80px 100px/ 3fr 2fr;
+    align-content: center;
+
 }
 
 .sidebar-container{
     grid-column: 1 / 2;
     grid-row: 1 / 3;
+    background-color: #B8DBD9;
+    color: black;
+}
+
+.main-container{
+    display: grid;
+    grid-template: repeat(2, 3fr) / 3fr 1fr;
+}
+
+.main-container > .your-projects{
+    grid-row: 1 / 3;
+}
+
+.main-container > .your-projects > .projects-containers{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+}
+
+.main-container > .your-projects > .projects-containers > .containers{
+    padding: 30px;
+    border: #000000 solid;
+}
+
+.icons{
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
 }
