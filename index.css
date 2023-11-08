@@ -1,13 +1,18 @@
 body{
     display: grid;
-    grid-template: 1fr 3fr / 1fr 3fr;
+    grid-template: 1fr 5fr / 1fr 3fr;
     color: #000000;
+}
+.containers , .announcements-containers{
+    background-color: white;
+    padding: 20px;
 }
 
 .header-container{
     display: grid;
     grid-template: 80px 100px/ 3fr 2fr;
     align-content: center;
+    padding: 20px;
 
 }
 
@@ -21,6 +26,9 @@ body{
 .main-container{
     display: grid;
     grid-template: repeat(2, 3fr) / 3fr 1fr;
+    gap: 20px;
+    padding: 20px;
+    background-color: #F4F4F9;
 }
 
 .main-container > .your-projects{
@@ -30,12 +38,15 @@ body{
 .main-container > .your-projects > .projects-containers{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
 
 }
 
 .main-container > .your-projects > .projects-containers > .containers{
     padding: 30px;
     border: #000000 solid;
+    background-color: white;
+
 }
 
 .icons{
