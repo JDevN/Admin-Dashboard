@@ -1,0 +1,9 @@
+body{
+    display: grid;
+    grid-template: 1fr 3fr / 1fr 3fr;
+}
+
+.sidebar-container{
+    grid-column: 1 / 2;
+    grid-row: 1 / 3;
+}
